@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  /* padding: 5vw; */
+  font-family: sans-serif;
+}
+
+:root {
+  --main-medium-light-brown: "#FFB94D";
+  --main-medium-brown: #CE7805;
+  --main-brown: #494C51;
+  --main-blue: #0D619F;
+  --main-gray: #EFF3FF;
+  --main-dark-gray: #282828;
+}
+
+h1 {
+  font-family: "Italiana"
+}
+
+.h1-heading {
+  font-size: 2rem
+}
+
+h2 {
+  font-family: "Italiana"
+}
+
+h3 {
+  font-family: "Italiana";
+  color: #CE7805;
+}
+
+h4 {
+  font-family: "Italiana"
+}
+
+h5 {
+  font-family: "Italiana"
+}
+
+h6 {
+  font-family: "Italiana"
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+li {
+  color:  var(--main-dark-gray) !important
+}
+
+th {
+  font-family: "Italiana";
+}
+
+tr {
+  font-family: "Italiana";
+}
+
+.accent {
+  font-family: "Italiana"
+}
+
+.myButton {
+	/* box-shadow: 3px 0px 3px 0px #3dc21b; */
+	background-color:#CE7805;
+	border-radius:1px;
+	display:inline-block;
+	cursor:pointer;
+	color: white !important;
+	font-family:"Poppins, sans-serif";
+	font-size:17px;
+	padding:16px 42px;
+	text-decoration:none;
+  border: #CE7805;
+	/* text-shadow:0px 1px 0px #2f6627; */
+  border: none
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.button-primary {
+  font-family: "Poppins, sans-serif";
+  font-size: 15px;
+  background-color: #CE7805 !important;
+  font-weight: 500;
+  min-width: 20vw;
+  border: none !important;
+  color: white !important;
+}
+
+.button-primary:hover {
+  font-family: "Poppins, sans-serif";
+  font-size: 15px;
+  color: white !important;
+  background-color: #CE7805 !important;
+}
+
+.button-secondary {
+  font-family: "Poppins, sans-serif";
+  font-size: 15px;
+  background-color: #CE7805 !important;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border: none !important;
+
+}
+
+.button-secondary:hover {
+  padding: 13px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.button-tertiary {
+  /* font-family: "Poppins, sans-serif";
+  font-size: 15px;
+  font-weight: 500;
+  min-width: 10ch;
+
+  border: none !important;
+  color: white !important; */
+  background-color: black !important;
+  border-radius:1px;
+	display:inline-block;
+	cursor:pointer;
+	color: white !important;
+	font-family:"Poppins, sans-serif";
+	font-size:17px;
+	padding:16px 42px;
+  letter-spacing: 2px;
+}
+
+.button-tertiary:hover {
+  font-family: "Poppins, sans-serif";
+  /* font-size: 15px; */
+  color: black !important;
+  background-color: white !important;
+  /* font-weight: 800 */
+}
+
+.container {
+  padding-top: 2vh;
+}
+
+.link-button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FORM */
+
+.date-picker {
+  margin-right: 1rem !important;
+}

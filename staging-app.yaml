@@ -1,0 +1,23 @@
+env: flex
+runtime: nodejs
+service: default
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 4
+resources:
+  cpu: 1
+  memory_gb: 2
+  disk_size_gb: 10
+
+handlers:
+- url: /
+  static_files: build/index.html
+  upload: build/index.html
+- url: /
+  static_dir: build
+  http_headers:
+    Access-Control-Allow-Origin: "*"
+- url: /.*
+  script: auto
+  secure: always

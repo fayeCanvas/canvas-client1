@@ -1,0 +1,128 @@
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-content-wrapper {
+  background-color: white;
+  /* min-width: 50vw; */
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  justify-content:center;
+  align-items: center;
+}
+
+.login-form .ant-input-affix-wrapper .ant-input {
+  padding-left: 40px !important;
+  color: black;
+}
+
+/* .login-btn {
+  background-color: black !important;
+  border: 1px solid black !important;
+  font-family: 'Josefin Sans' !important;
+  color: white !important;
+} */
+
+/* .forgot-pass-btn {
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.login-form .ant-form-item {
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+} */
+
+.ant-spin-dot-item {
+  background-color: #AC7E65 !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .login-content-wrapper {
+    background-color: white;
+    min-width: 50vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .img-login {
+    max-width: 40vw;
+  }
+}
+
+.goaltypeselected {
+  margin-top: 15px;
+}
+h5.count-header {
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+.col-6.btn-left > button, .col-6.btn-right > button {
+  width: 240px;
+  padding: 15px;
+  border-radius: 28px;
+  font-size: 20px;
+}
+.col-6.btn-right {
+  float: right;
+}
+.col-6.btn-left {
+  float: left;
+}
+button.readytoshare {
+  width: 250px;
+  padding: 15px;
+  border-radius: 28px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.main-count h4 {
+  font-size: 60px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .login-content-wrapper {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 992px){
+    .login-content-wrapper {
+      max-width: 70vw;
+      min-width: 30vw;
+  }
+
+  .login-page-wrapper .ant-form {
+    min-width: 25vw;
+    max-width: 45vw;
+}
+
+  /* .form {
+    max-width: 30vw !important;
+  } */
+
+ }

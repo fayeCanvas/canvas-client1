@@ -1,0 +1,24 @@
+.profile-label {
+  margin-bottom:  0;
+  font-weight: 500;
+}
+
+.profile-header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#profile-label-title {
+  min-width: 45px !important;
+  font-weight: 700
+}
+
+.profile-header-wrapper button {
+  display: inline;
+  max-width: 120px;
+}
+
+label {
+  min-width: 10vw;
+}

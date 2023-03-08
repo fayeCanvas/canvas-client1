@@ -1,0 +1,19 @@
+.timer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4vh;
+  flex-wrap: wrap
+}
+
+.time-wrapper button {
+  padding:  2px  !important;
+  border: 1px solid  blue;
+  }
+
+#time-button-ready {
+  margin-top: 5vh !important;
+  padding: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+}

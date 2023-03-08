@@ -1,0 +1,38 @@
+image: node:12.3.1
+
+stages:
+  # - test
+  - deploy
+
+# test_staging:
+#   stage: test
+#   environment: Production
+#   only:
+#     - development
+#   script:
+#     - npm install
+#     - npm test
+
+deploy_production:
+  stage: deploy
+  image: google/cloud-sdk:alpine
+  environment: Production
+  only:
+  - master
+  script:
+  - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
+  - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
+  - gcloud --quiet --project canvas-psych-client-staging app deploy app.yaml
+
+deploy_staging:
+  stage: deploy
+  image: google/cloud-sdk:alpine
+  environment: Production
+  only:
+  - development
+  script:
+  - echo $SERVICE_ACCOUNT_STAGING > /tmp/$CI_PIPELINE_ID.json
+  - gcloud auth activate-service-account gitlabe-build@canvas-psych-client-staging.iam.gserviceaccount.com --key-file /tmp/$CI_PIPELINE_ID.json
+  - gcloud --quiet --project canvas-psych-client-staging app deploy staging-app.yaml --verbosity=debug
+  after_script:
+    - rm /tmp/$CI_PIPELINE_ID.json

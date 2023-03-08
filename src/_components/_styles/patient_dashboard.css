@@ -1,0 +1,11 @@
+.page-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.patient-dashboard-subheading {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+}
